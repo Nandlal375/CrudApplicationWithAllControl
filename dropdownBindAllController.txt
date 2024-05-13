@@ -597,3 +597,12 @@ namespace CrudApplicationWithAllControl.Controllers
     </tbody>
 </table>
 
+==== onchange function call when dropdown country any select data ===============
+<script>
+    $(document).ready(function () {
+        $("#ddlcountry").change(function () {
+            console.log("Hello hii");
+        });
+    });
+</script>
+
