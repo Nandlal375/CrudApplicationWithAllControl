@@ -60,6 +60,29 @@ country=@country1,Hobby=@Hobby1,Gender=@Gender1 where Id = @Idd
 END
 
 
+====###### State Table Code ####===========
+  
+USE [Colleage]
+GO
+
+/****** Object:  Table [dbo].[statetbl]    Script Date: 04-06-2024 07:59:24 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[statetbl1](
+	[stateid] [int] IDENTITY(1,1) NOT NULL,
+	[statename] [varchar](100) NULL,
+	[cid] [int] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[stateid] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
 
 
 
